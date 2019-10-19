@@ -62,7 +62,7 @@ public class UserController {
                                       @RequestParam("email") String email,
                                       @RequestParam("userName") String userName,
                                       @RequestParam("dateOfBirth") Date dateOfBirth,
-                                      @RequestParam("newsPreferences") String newsPreferences,
+                                      @RequestParam("newsPreferences") String[] newsPreferences,
                                       @RequestParam("password") String password) {
         User user = new User(name,email,userName,dateOfBirth,newsPreferences);
         ResponseEntity responseEntity;

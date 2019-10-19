@@ -25,7 +25,7 @@ public class User {
 
 //   String password;
     Date dateOfBirth;
-    String newsPreferences;
+    String[] newsPreferences;
 
 
 }
