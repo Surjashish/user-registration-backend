@@ -1,0 +1,16 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  mongo:
+    image: mongo:3.4-xenial
+    ports:
+      - "27017:27017"
+    container_name: mongo
+    network_mode: host
+    volumes:
+      - $HOME/data/db:/data/db
